@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Table } from './TransactionHistory.styled';
 
 
-export const TransactionHistory = (({ items }) => {
+export const TransactionHistory = ({ items }) => {
     return (
 <Table className="transaction-history">
     <thead>
@@ -26,7 +26,7 @@ export const TransactionHistory = (({ items }) => {
 </Table>
 
     )
-})
+}
 
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(

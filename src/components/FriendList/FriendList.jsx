@@ -3,7 +3,7 @@ import { List } from './FriendList.styled';
 import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 
 
-export const FriendList = ( {friends} ) => {
+export const FriendList = ({ friends }) => {
     return (
         <List>
             {friends.map(({ id, avatar, name, isOnline }) => {
@@ -13,12 +13,12 @@ export const FriendList = ( {friends} ) => {
                         avatar={avatar}
                         name={name}
                         isOnline={isOnline}
-                    /> 
+                    />
                 )
             })}
         </List>
     )
-}
+};
 
 
 FriendList.propTypes = {
